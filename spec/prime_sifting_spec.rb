@@ -1,7 +1,7 @@
 require('rspec')
 require('prime_sifting')
 
-describe ('Prime#create_range') do
+describe('Prime#create_range') do
   it ("will return a range starting at 2 to the number inputted by user") do
   new_number = Prime.new(6)
   expect(new_number.create_range).to(eq([2, 3, 4, 5, 6]))

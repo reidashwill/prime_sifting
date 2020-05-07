@@ -39,11 +39,14 @@ attr_accessor(:user_number, :num_range, :prime)
       @num_range.unshift(2, 3, 5)
     elsif @user_number >= 3
       @num_range.unshift(2, 3) 
+    elsif @user_number == 2
+      @num_range.unshift(2)
+    elsif @user_number == 1
+      puts "1 is not a prime number!"
     else
-      @num_range.unshift(2)    
+      puts "something went wrong!  please try again"
     end
-    @num_range.join(" ")
+    puts @num_range.join(" ")
   end
-  @num_range
 end
 
